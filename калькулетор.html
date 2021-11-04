@@ -1,0 +1,48 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Калькулятор</title>
+<link rel="stylesheet" type="text/css" href="calcstyle.css">
+</head>
+<body>
+<script src="calcscript.js"></script>
+
+<div class="calc">
+
+<input id="printoutput" readonly="true" type="text" class="printoutput">
+<input id="printoutputanswer" readonly="true" type="text" class="printoutput">
+
+<table>
+<tr>
+<td><button id="1" onclick="output(1)">1</button></td>
+<td><button id="2" onclick="output(2)">2</button></td>
+<td><button id="3" onclick="output(3)">3</button></td>
+<td><button id="-" onclick="output('-')">-</button></td>
+<td><button id="AC" onclick="clearScreen()">AC</button></td>
+</tr>
+<tr>
+<td><button id="4" onclick="output(4)">4</button></td>
+<td><button id="5" onclick="output(5)">5</button></td>
+<td><button id="6" onclick="output(6)">6</button></td>
+<td><button id="/" onclick="output('/')">/</button></td>
+<td><button id="DEL" onclick="clearScreenLast()">DEL</button></td>
+</tr>
+<tr>
+<td><button id="7" onclick="output(7)">7</button></td>
+<td><button id="8" onclick="output(8)">8</button></td>
+<td><button id="9" onclick="output(9)">9</button></td>
+<td><button id="*" onclick="output('*')">*</button></td>
+<td><button id="ANS" onclick="answer()">ANS</button></td>
+</tr>
+<tr>
+<td><button id="0" onclick="output(0)">0</button></td>
+<td><button id="." onclick="output('.')">.</button></td>
+<td><button id="=" onclick="isEqual()">=</button></td>
+<td><button id="+" onclick="output('+')">+</button></td>
+<td><button id="RND" onclick="round()">RND</button></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
